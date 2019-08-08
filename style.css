@@ -1,13 +1,14 @@
 /*General Styles*/
 body{
 	background-image: url("img/background-photo.jpeg");
+	font-family: 'Poppins', sans-serif;
+	color: white;
 }
 p{
 	text-align: center;
-	color: white;
 	font-size: 30px;
-
 }
+
 /*Specific Styles*/
 .side-bar{
 	height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -24,6 +25,7 @@ p{
   padding: 50px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
+  font-weight: 700;
   color: white;
   display: block;
   text-align: center;
@@ -37,7 +39,19 @@ p{
 .main-content{
   margin-left: 160px; /* Same as the width of the sidebar */
   padding: 0px 10px;
-  height: 100%;
-  vertical-align: middle;
+  height: 600px;
+  position: relative;
 }
-
+.center {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.name{
+	text-align: center;
+	font-size: 15px;
+	text-decoration: underline;
+}
