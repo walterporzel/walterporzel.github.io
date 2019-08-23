@@ -3,55 +3,82 @@ body{
 	background-image: url("img/background-photo.jpeg");
 	font-family: 'Poppins', sans-serif;
 	color: white;
+	width: 100%;
+	min-height: 100vh;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
-p{
-	text-align: center;
-	font-size: 30px;
+nav{
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	align-items: center;
+}
+a{
+	padding: 50px 10px;
 }
 
 /*Specific Styles*/
-.side-bar{
-	height: 100%; /* Full-height: remove this if you want "auto" height */
- 	width: 160px; /* Set the width of the sidebar */
- 	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-	z-index: 1; /* Stay on top */
-	top: 0; /* Stay at the top */
-	left: 0;
-	background-color: rgba(92, 247, 240, 0.3);
-	overflow-x: hidden; /* Disable horizontal scroll */
- 	padding-top: 20px;
+.name{
+	font-size: 10px;
 }
-.side-bar a{
-  padding: 50px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  font-weight: 700;
-  color: white;
-  display: block;
-  text-align: center;
+.wrapper{
+	display: flex;
+	justify-content: space-between;
+	flex-grow: 1;
+
+}
+.side-bar{
+ 	width: 160px;
+	background-color: rgba(92, 247, 240, 0.3);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: center;
 }
 .My-picture{
 	border-radius: 50%;
-	width: 100px;
-	display: block;
-	margin: auto;
+	width: 80%;
 }
 .main-content{
-  margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
-  height: 600px;
-  position: relative;
-}
-.center {
-  margin: 0;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.name{
+	font-size: 30px;
+	display: flex;
+	align-items: center;
 	text-align: center;
-	font-size: 15px;
-	text-decoration: underline;
+	padding: 30px;
+}
+.upperSide{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+@media screen and (max-width: 600px){
+	.wrapper{
+		flex-direction: column;
+	}
+	.side-bar{
+		flex-direction: row;
+		height: 80px;
+		width: 100%;
+		justify-content: center;
+	}
+	nav{
+		flex-direction: row;
+		justify-content: center;
+	}
+	a{
+		padding: 10px
+	}
+	.name{
+		display: none;
+	}
+	.My-picture{
+		height: 80%;
+		width: 60px;
+		margin: 10px;
+	}
 }
