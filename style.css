@@ -1,6 +1,7 @@
 /*General Styles*/
 body{
-	background-image: url("img/background-photo.jpeg");
+	background-image: url("./img/large-leather.png");
+	background-color: #234645;
 	font-family: 'Poppins', sans-serif;
 	color: white;
 	width: 100%;
@@ -18,7 +19,14 @@ nav{
 	align-items: center;
 }
 a{
-	padding: 50px 10px;
+	padding: 100px 0px;
+	text-decoration: none;
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+.side-bar a:hover{
+	background:  rgba(92, 247, 239, 0.425);
 }
 h2{
 	margin: 5px;
@@ -34,12 +42,16 @@ h2{
 	flex-grow: 1;
 }
 .side-bar{
- 	width: 160px;
+ 	width: 120px;
 	background-color: rgba(92, 247, 240, 0.3);
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-content: center;
+	position: fixed;
+	animation: slideIn;
+    animation-duration: 1s; 
 }
 .My-picture{
 	border-radius: 50%;
@@ -53,6 +65,9 @@ h2{
 	align-items: center;
 	text-align: center;
 	padding: 30px;
+	margin-left: 120px;
+	animation: fadeInOpacity;
+    animation-duration: 2s; 
 }
 .titleLink{
 	font-size: 20px;
@@ -75,6 +90,18 @@ h2{
 	justify-content: center;
 	align-items: center;
 }
+/* Animations */
+@keyframes slideIn{
+    0% {transform: translate(-120px, 0)}
+    100% {transform: translate(0, 0)}
+}
+@keyframes fadeInOpacity {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+/* For Phones */
 @media screen and (max-width: 600px){
 	.wrapper{
 		flex-direction: column;
@@ -84,13 +111,19 @@ h2{
 		height: 80px;
 		width: 100%;
 		justify-content: center;
+		z-index: 1;
+		background-color: #3f7a78;
 	}
 	nav{
 		flex-direction: row;
 		justify-content: center;
 	}
 	a{
-		padding: 10px
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0 20px;
+		height: 100%;
 	}
 	.name{
 		display: none;
@@ -99,5 +132,13 @@ h2{
 		height: 80%;
 		width: 60px;
 		margin: 10px;
+	}
+	.main{
+		margin-top: 80px;
+		margin-left: 0px;
+	}
+	@keyframes slideIn{
+		0% {transform: translate(0, -80px)}
+		100% {transform: translate(0, 0)}
 	}
 }
