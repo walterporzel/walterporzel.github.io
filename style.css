@@ -1,4 +1,7 @@
 /*General Styles*/
+html {
+	scroll-behavior: smooth;
+}
 body{
 	background-image: url("./img/large-leather.png");
 	background-color: #234645;
@@ -19,7 +22,7 @@ nav{
 	align-items: center;
 }
 a{
-	padding: 100px 0px;
+	padding: 50px 0px;
 	text-decoration: none;
 	color: white;
 	width: 100%;
@@ -31,10 +34,20 @@ a{
 h2{
 	margin: 5px;
 }
+footer{
+	font-size: 12px;
+	margin-top: 30px;
+}
 
 /*Specific Styles*/
 .name{
 	font-size: 10px;
+}
+.about{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
 }
 .wrapper{
 	display: flex;
@@ -54,6 +67,7 @@ h2{
     animation-duration: 1s; 
 }
 .My-picture{
+	margin-top: 10px;
 	border-radius: 50%;
 	width: 80%;
 }
@@ -61,10 +75,9 @@ h2{
 	font-size: 30px;
 	display: flex;
 	flex-direction: column;
-	height: 400px;
 	align-items: center;
 	text-align: center;
-	padding: 30px;
+	padding: 0 100px;
 	margin-left: 120px;
 	animation: fadeInOpacity;
     animation-duration: 2s; 
@@ -89,6 +102,13 @@ h2{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+.brand{
+	font-size: 14px;
+	font-style: italic;
+}
+.picture{
+	padding: 0px;
 }
 /* Animations */
 @keyframes slideIn{
