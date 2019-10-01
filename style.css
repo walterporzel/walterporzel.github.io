@@ -82,10 +82,9 @@ footer{
 	animation: fadeInOpacity;
     animation-duration: 2s; 
 }
-.titleLink{
-	font-size: 20px;
+.projectTitle{
+	font-size: 30px;
 	color: white;
-	text-decoration: none;
 	padding: 0px;
 }
 .titleLink:hover{
@@ -110,6 +109,22 @@ footer{
 .picture{
 	padding: 0px;
 }
+/* Links */
+.linksWrapper{
+	display: flex;
+	justify-content: center;
+	font-size: 12px;
+	padding: 0px;
+}
+.resourceLink{
+	padding: 0px;
+	width: auto;
+	text-decoration: underline;
+}
+.divider{
+	padding: 0 10px;
+}
+
 /* Animations */
 @keyframes slideIn{
     0% {transform: translate(-120px, 0)}
