@@ -100,6 +100,9 @@ footer{
 	font-size: 14px;
 	font-style: italic;
 }
+.aboutMe{
+	font-size: 14px;
+}
 
 /* Project Section Styles */
 .projectTitle{
@@ -143,6 +146,9 @@ footer{
 
 /* For Phones */
 @media screen and (max-width: 600px){
+	.about{
+		height: auto;
+	}
 	.wrapper{
 		flex-direction: column;
 	}
@@ -157,6 +163,9 @@ footer{
 	nav{
 		flex-direction: row;
 		justify-content: center;
+	}
+	.navbarLinks{
+		padding: 0 10px;
 	}
 	a{
 		display: flex;
