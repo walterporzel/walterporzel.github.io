@@ -40,7 +40,6 @@ footer{
 	flex-grow: 1;
 }
 .main{
-	font-size: 30px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -53,7 +52,7 @@ footer{
 
 /* Navbar Styles */
 .navbarLinks{
-	padding: 50px 0px;
+	padding: 35px 0px;
 	width: 100%;
 	text-align: center;
 }
@@ -90,17 +89,31 @@ footer{
 }
 
 /* Hompage styles  */
-.about{
+.introPage{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	height: 100vh;
 }
-.brand{
+.title{
 	font-size: 14px;
 	font-style: italic;
+	margin: 0;
 }
-.aboutMe{
+.name{
+	margin: 0;
+}
+.introStatement{
+	margin-top: 40px;
+}
+/* About Me Section styles */
+#aboutMe{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+}
+.aboutMeSection{
 	font-size: 14px;
 }
 
