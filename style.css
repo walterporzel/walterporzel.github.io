@@ -52,7 +52,7 @@ footer{
 
 /* Navbar Styles */
 .navbarLinks{
-	padding: 50px 0px;
+	padding: 35px 0px;
 	width: 100%;
 	text-align: center;
 }
@@ -107,7 +107,13 @@ footer{
 	margin-top: 40px;
 }
 /* About Me Section styles */
-.aboutMe{
+#aboutMe{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+}
+.aboutMeSection{
 	font-size: 14px;
 }
 
