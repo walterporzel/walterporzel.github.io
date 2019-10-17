@@ -30,7 +30,7 @@ h2{
 }
 footer{
 	font-size: 12px;
-	margin-top: 30px;
+	margin: 30px 0;
 }
 
 /* Page Layout Styles */
@@ -49,10 +49,15 @@ footer{
 	animation: fadeInOpacity;
     animation-duration: 2s; 
 }
+.logo{
+	height: 35px;
+	width: 35px;
+	margin: 0 10px;
+}
 
 /* Navbar Styles */
 .navbarLinks{
-	padding: 35px 0px;
+	padding: 50px 0px;
 	width: 100%;
 	text-align: center;
 }
