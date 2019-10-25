@@ -117,9 +117,10 @@ footer{
 	flex-direction: column;
 	justify-content: center;
 	height: 100vh;
+	margin-bottom: 20px;
 }
 .aboutMeSection{
-	font-size: 14px;
+	font-size: 16px;
 }
 
 /* Project Section Styles */
@@ -133,6 +134,7 @@ footer{
 }
 .projectScreen{
 	max-width: 80%;
+	margin-bottom: 50px;
 }
 
 /* Links to Projects an Repos */
@@ -163,7 +165,7 @@ footer{
 }
 
 /* For Phones */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1080px){
 	.about{
 		height: auto;
 	}
