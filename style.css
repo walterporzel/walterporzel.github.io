@@ -80,10 +80,9 @@ footer{
 	justify-content: center;
 	align-items: center;
 }
-.My-picture{
-	margin-top: 10px;
-	border-radius: 50%;
-	width: 80%;
+.home-picture{
+	padding: 20%;
+	max-width: 60%;
 }
 .picture{
 	padding: 0px;
@@ -99,6 +98,7 @@ footer{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	height: 100vh;
 }
 .title{
@@ -111,6 +111,12 @@ footer{
 }
 .introStatement{
 	margin-top: 40px;
+}
+.My-picture{
+	margin-top: 10px;
+	border-radius: 50%;
+	width: 150px;
+	border: 2px solid white;
 }
 /* About Me Section styles */
 #aboutMe{
@@ -237,9 +243,12 @@ footer{
 		/* height: 100%; */
 	}
 	.My-picture{
-		height: 80%;
-		width: 60px;
-		margin: 10px;
+		
+	}
+	.home-picture{
+		height: 40px;
+		width: 340px;
+		padding: 20px;
 	}
 	.main{
 		margin-top: 80px;
