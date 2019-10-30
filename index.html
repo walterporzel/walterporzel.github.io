@@ -5,7 +5,6 @@
 	<title>Walter Porzel Portfolio</title>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
-
 </head>
 <body>
 <div class="wrapper">
@@ -23,25 +22,23 @@
 			<h1 class="name">Walter Porzel</h1>
 			<p class="title">Software Engineer</p>
 			<img class="My-picture" src="https://avatars0.githubusercontent.com/u/52131739?s=460&v=4"/>
-			<p class="introStatement">Thanks for visiting my page! Feel free to pursue some of my past work here or on GitHub, and if anything catches your eye don’t hesitate to reach out via phone, email or LinkedIn. I’d love to discuss what work we can do together in the future. </p>
+			<p class="introStatement">Thanks for visiting my page! Feel free to peruse some of my past work here or on GitHub, and if anything catches your eye don’t hesitate to reach out via phone, email or LinkedIn. I’d love to discuss what work we can do together in the future. </p>
 		</div>
 		<div id="aboutMe">
 			<h2>About Me</h2>
-			<p class="aboutMeSection">
+			<div class="aboutMeSection">
 				I’ve worn a lot of different hats in my young career, all important to getting me to where I am today.
-				<br>
-				<br>
-				I started out as getting my degree in Chemical Engineering, along the way working a year long co-op at a large chemical plant. Although I enjoyed the unique design challenges the chemical engineering field presents, what really excited me was working was process modeling in MATLAB and system controller design. 
-				<br>
-				<br>
+				<div class="picParagraph">
+					<p>I started out as getting my degree in Chemical Engineering, along the way working a year long co-op at a large chemical plant. Although I enjoyed the unique design challenges the chemical engineering field presents, what really excited me was working was process modeling in MATLAB and system controller design.</p>
+					<img class="aboutMePic" src="./img/chemical-plant.jpg" alt="Chemical plant"/>
+				</div>
 				With those preferences in mind, I pursued work in IT upon graduation and took a job as an onsite consultant implementing new billing software for a local hospital. I’ve always had faith in my technical ability, but this job allowed me to sharpen my skills in a number of different areas including leadership, project management, building client relationships, and coordinating between multiple different stakeholder groups. It also provided me the opportunity to work extensively with SQL databases, in that I was often tasked with writing complex queries to generate reports that were used everyday by hospital medical and administrative staff. 
-				<br>
-				<br>
-				Working with SQL reignited my passion for computer coding and I began teaching myself the basics of HTML, CSS and JavaScript on the side. I found the work incredibly rewarding, and knowing that I had finally found what I was meant to do, decided to leave my job to pursue a career in Software Engineering.
-				<br>
-				<br>
+				<div class="picParagraph">
+					<img class="aboutMePic" src="./img/Venus.png" alt="Picture of Venus">
+					<p>Working with SQL reignited my passion for computer coding and I began teaching myself the basics of HTML, CSS and JavaScript on the side. I found the work incredibly rewarding, and knowing that I had finally found what I was meant to do, decided to leave my job to pursue a career in Software Engineering.</p>
+				</div>
 				If I’m not codding you can probably find my rooting for (or agonizing over) Washington sports teams or walking my dog and best friend Venus. 
-			</p>
+			</div>
 		</div>
 		<div id="projects">
 			<div class="project">
@@ -55,19 +52,19 @@
 					The cocktail hour is a full stack MERN application utilizing an express API backend and a React front end. Users can utilize our aesthetically designed UI to search through a large database of cocktails, find the perfect drink, and follow the simple directions to concoct their chosen beverage.
 				</p>
 				<div class="image-filter">
-						<img class="projectScreen" src="./img/CocktailHour.png">
+						<img class="projectScreen" src="./img/Screen Shot 2019-10-30 at 4.50.46 PM.png">
 						<div class="image-link">
-							<a href="https://walterporzel.github.io/hangman-game/lib/">Deployed App</a>
-							<a href="https://github.com/walterporzel/hangman-game">Repository</a>
+							<a href="http://cocktailsfront.surge.sh/">Deployed App</a>
+							<a href="https://github.com/walterporzel/CocktailApp">Repository</a>
 						</div>
 				</div>
 			</div>
 			<div class="project">
 				<h2 class="projectTitle">Hangman</h2>
 				<div class='linksWrapper'>
-					<a class="resourceLink" href="https://walterporzel.github.io/hangman-game/lib/">Deployed App</a>
+					<a class="resourceLink" href="http://cocktailsfront.surge.sh/">Deployed App</a>
 					<div class="divider">|</div>
-					<a class="resourceLink" href="https://github.com/walterporzel/hangman-game">Repository</a>
+					<a class="resourceLink" href="https://github.com/walterporzel/CocktailApp">Repository</a>
 				</div>
 				<p class="projectDescription">
 					Hangman is a game played between two players, one person who chooses a word and another who takes turns guessing letters. If the guesser chooses 6 letters that are not in the word before completing the word, they lose the game. If they correctly guess all letters in the word, they win the game.

@@ -51,8 +51,8 @@ footer{
     animation-duration: 2s; 
 }
 .logo{
-	height: 35px;
-	width: 35px;
+	height: 45px;
+	width: 45px;
 	margin: 0 10px;
 }
 
@@ -111,6 +111,7 @@ footer{
 }
 .introStatement{
 	margin-top: 40px;
+	max-width: 900px;
 }
 .My-picture{
 	margin-top: 10px;
@@ -122,14 +123,23 @@ footer{
 #aboutMe{
 	display: flex;
 	flex-direction: column;
+	min-height: 100vh;
+	max-width: 900px;
 	justify-content: center;
-	height: 100vh;
 	margin-bottom: 20px;
 }
 .aboutMeSection{
 	font-size: 16px;
 }
-
+.aboutMePic{
+	height: 120px;
+	margin: 20px;
+	border: 2px solid white;
+}
+.picParagraph{
+	display: flex;
+	align-items: center;
+}
 /* Project Section Styles */
 .projectTitle{
 	font-size: 30px;
@@ -138,6 +148,7 @@ footer{
 }
 .projectDescription{
 	font-size: 14px;
+	max-width: 900px;
 }
 .projectScreen{
 	width: 100%;
